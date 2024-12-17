@@ -1,0 +1,30 @@
+footer {
+    position: relative; /* Footer will scroll with the page */
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #add8e6; /* Light blue background */
+    color: white;
+    padding: 20px 0; /* Add some padding for spacing */
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1); /* Optional shadow */
+  }
+  
+  footer .container {
+    max-width: 1200px;
+    margin: 0 auto; /* Center the content */
+  }
+  
+  footer ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  footer a {
+    text-decoration: none;
+    color: white;
+  }
+  
+  footer a:hover {
+    color: #f0f0f0; /* Lighter color on hover */
+  }
+  

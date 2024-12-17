@@ -1,0 +1,71 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm py-3">
+  <div class="container">
+      <!-- Brand -->
+      <a class="navbar-brand fw-bold text-primary" routerLink="/" style="font-size: 1.5rem;">
+          <i class="bi bi-stars"></i> MyBrand
+      </a>
+
+      <!-- Toggle Button for Mobile View -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Navbar Links -->
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                  <a class="nav-link fw-semibold text-secondary mx-2" routerLink="/table" style="transition: color 0.3s;">Table</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link active fw-semibold text-primary mx-2" aria-current="page" routerLink="/product" style="transition: color 0.3s;">Product </a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link active fw-semibold text-primary mx-2" aria-current="page" routerLink="/contact" style="transition: color 0.3s;">Contact Us</a>
+              </li>
+          </ul>
+
+          <!-- Search and Login Buttons -->
+          <form class="d-flex align-items-center">
+              <input class="form-control me-2 rounded-pill" type="search" placeholder="Search" aria-label="Search" style="box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
+              <button class="btn btn-primary rounded-pill px-4 me-2" type="submit">Search</button>
+              <button class="btn btn-outline-secondary rounded-pill px-4" type="button" id="loginButton">Login</button>
+          </form>
+      </div>
+  </div>
+</nav>
+
+<!-- Sliding Login Form -->
+<div id="loginForm" class="login-form bg-light shadow-lg p-4">
+  <button type="button" class="btn-close float-end" id="closeLoginForm"></button>
+  <h4 class="mb-4 text-primary">Login</h4>
+  <form>
+      <div class="mb-3">
+          <label for="email" class="form-label">Email</label>
+          <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+      </div>
+      <div class="mb-3">
+          <label for="password" class="form-label">Password</label>
+          <input type="password" class="form-control" id="password" placeholder="Enter your password" required>
+      </div>
+      <button type="submit" class="btn btn-primary w-100">Login</button>
+  </form>
+</div>
+<script>
+    // Get the login form and buttons
+    const loginForm = document.getElementById('loginForm');
+    const loginButton = document.getElementById('loginButton');
+    const closeLoginForm = document.getElementById('closeLoginForm');
+
+    // Show the login form when the Login button is clicked
+    loginButton.addEventListener('click', function() {
+        loginForm.classList.add('active');
+    });
+
+    // Close the login form when the close button is clicked
+    closeLoginForm.addEventListener('click', function() {
+        loginForm.classList.remove('active');
+    });
+
+
+
+</script>

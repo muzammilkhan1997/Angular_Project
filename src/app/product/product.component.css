@@ -1,0 +1,24 @@
+.product-card {
+    transition: transform 0.3s ease;
+  }
+  .product-card:hover {
+    transform: scale(1.05);
+  }
+  .product-image {
+    height: 200px;
+    object-fit: cover;
+  }
+  .product-name {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+  }
+  .product-price {
+    color: #007bff;
+    font-weight: bold;
+  }
+  .product-description {
+    font-size: 0.9rem;
+    color: #555;
+    margin-top: 10px;
+  }

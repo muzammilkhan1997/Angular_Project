@@ -1,0 +1,69 @@
+/* Navbar Styling */
+.navbar {
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 0.5px;
+}
+
+.navbar-brand:hover {
+    color: #0056b3 !important;
+    text-decoration: none;
+}
+
+/* Links Styling */
+.nav-link {
+    position: relative;
+}
+
+.nav-link:hover {
+    color: #0056b3 !important;
+    text-decoration: none;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0%;
+    height: 2px;
+    background-color: #0056b3;
+    transition: width 0.3s ease-in-out;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+/* Search Input */
+.form-control {
+    transition: box-shadow 0.3s ease;
+}
+
+.form-control:focus {
+    box-shadow: 0px 0px 5px rgba(0, 123, 255, 0.5);
+    outline: none;
+}
+
+/* Search Button */
+.btn-primary:hover {
+    background-color: #004085;
+    border-color: #004085;
+    box-shadow: 0px 4px 15px rgba(0, 91, 187, 0.4);
+}
+/* Login Form Styling */
+/* Login Form Styling */
+.login-form {
+    position: fixed;
+    top: 0;
+    right: -400px; /* Initially off-screen */
+    width: 400px;
+    height: 100%;
+    transition: right 0.3s ease-in-out;
+    z-index: 1050;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.login-form.active {
+    right: 0; /* Slides in */
+}
+
